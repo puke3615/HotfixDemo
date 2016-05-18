@@ -16,7 +16,7 @@ public class HotfixApplication extends Application {
     public void onCreate() {
         super.onCreate();
         sContext = this;
-        //laod hotfix if need
+        //load hotfix if need
         if (Config.isEnable()) {
             Hotfix.loadDexIfNeed(this);
         }
